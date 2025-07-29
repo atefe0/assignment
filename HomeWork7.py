@@ -2,14 +2,12 @@ import requests
 
 def start_game():
     url = "https://mastermind.darkube.app/game"
-    global game_id
     game_id = requests.post(url)
     game_id = game_id.json().get("game_id")
     return game_id
 
 def send_guess(game_id, guess):
     url = "https://mastermind.darkube.app/guess"
-    global response
     response = requests.post(url, json={"game_id":game_id,"guess":guess})
     print(f"your guess:{guess}")
     print(f"status:{response.status_code}")
