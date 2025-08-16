@@ -1,0 +1,7 @@
+gradio
+pandas
+nltk
+requests
+transformers
+spacy
+en-ner-bc5cdr-md @ https://huggingface.co/dmis-lab/biobert-base-cased-v1.1/resolve/main/en_ner_bc5cdr_md-0.5.4.tar.gz
